@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Testy Recipe Book</h1>
+        <input type="text" id="searchInput" placeholder="Search recipes...">
+        <nav>
+            <button data-category="All">All</button>
+            <button data-category="Breakfast">Breakfast</button>
+            <button data-category="Lunch">Lunch</button>
+            <button data-category="Dinner">Dinner</button>
+            <button data-category="Snacks">Snacks</button>
+            <button data-category="Desserts">Desserts</button>
+            <button id="favoritesBtn">Favorites</button>
+        </nav>
+    </header>
+    <main>
+        <section id="recipeList">
+            <!-- Recipes will be displayed here -->
+        </section>
+        <section id="addRecipeForm">
+            <h2>Add a New Recipe</h2>
+            <form id="recipeForm">
+                <input type="text" id="recipeName" placeholder="Recipe Name" required>
+                <textarea id="ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+                <textarea id="instructions" placeholder="Instructions" required></textarea>
+                <input type="text" id="imageUrl" placeholder="Image URL">
+                <input type="text" id="category" placeholder="Category (Breakfast, Lunch, etc.)" required>
+                <input type="text" id="nutrition" placeholder="Nutrition (e.g., 200 kcal, 10g protein)">
+                <button type="submit">Add Recipe</button>
+            </form>
+        </section>
+    </main>
+    <a href="index.html" class="back-to-front-page">Back to Front Page</a>
+    <script src="scripts.js"></script>
+</body>
+</html>
